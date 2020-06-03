@@ -1,0 +1,24 @@
+$width:1200px;
+$w:100%;
+$size:12px;
+$font_size:14px;
+
+@mixin borderstyle($size:1px, $style:solid, $color:#ccc) {
+ border: $size $style $color;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+.contant{
+    width: $width;
+    margin: 0 auto;
+}
+
+@import "top.scss";
+@import "header.scss";
+@import "logo.scss";
+
+
+

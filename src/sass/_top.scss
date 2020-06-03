@@ -1,0 +1,11 @@
+#top{
+    width: $w;
+    height: 100px;
+    background: #bc030f;
+    .advertising{
+        width: $width;
+        height: 100px;
+        background: url(https://img.ingping.com/images/gg_images/202005/202005291831080775481.jpg) no-repeat;
+        margin: 0 auto;
+    }
+}
