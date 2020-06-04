@@ -1,0 +1,31 @@
+/* 轮播 */
+#lunbo{
+    width: $w;
+    height: 450px;
+    background-color: #fff;
+    position: relative;
+    .carousel{
+        width: $w;
+        height: 450px;
+        background-color: red;
+    }
+    .contant{
+        height: 450px;
+        background-color: lightcoral;
+        position: absolute;      
+        top: 0;
+        left: 166.5px;
+        .menu{
+            width: 210px;
+            height: 450px;
+            background-color: lightgoldenrodyellow;
+            float: left;
+        }
+        .tab{
+            width: 220px;
+            height: 450px;
+            background-color: lightgreen;
+            float: right;
+        }
+    }
+}

@@ -1,5 +1,19 @@
+/* 导航栏 */
 #logo{
     width: $w;
     height: 160px;
     background-color: #fff;
+    .contant{
+        height: 160px;
+        .logo_top{
+            width: $width;
+            height: 120px;
+            background-color: gold;
+        }
+        .logo_bottom{
+            width: $width;
+            height: 40px;
+            background-color: greenyellow;
+        }
+    }
 }

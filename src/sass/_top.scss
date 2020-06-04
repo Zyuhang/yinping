@@ -1,3 +1,14 @@
+/* 固定定位 */
+#fixed{
+    width: 30px;
+    height: $w;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+/* 广告 */
 #top{
     width: $w;
     height: 100px;

@@ -1,0 +1,24 @@
+#sell{
+    width: $w;
+    height: 472px;
+    .contant{
+        height: 472px;
+        h2{
+            font-size: 24px;
+            font-weight: 900;
+            margin-top: 34px;
+            margin-bottom: 14px;
+        }
+        .top{
+            width: $width;
+            height: 194px;
+            background-color: yellow;
+            margin-bottom: 10px;
+        }
+        .bottom{
+            width: $width;
+            height: 194px;
+            background-color: bisque;
+        }
+    }
+}

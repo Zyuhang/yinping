@@ -1,0 +1,27 @@
+/* 录音 */
+#record{
+    width: $w;
+    height: 165px;
+    overflow: hidden;
+    .contant{
+        height:150px;
+        margin-top: 15px;
+        background-color: deeppink;
+        ul{
+            width: $width;
+            height: 150px;
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 232px;
+                height: 150px;
+                float: left;
+                a{
+                    display: block;
+                    width: 232px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}

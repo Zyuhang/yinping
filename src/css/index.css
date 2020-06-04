@@ -1,42 +1,48 @@
+@charset "UTF-8";
 body {
   background: #f2f2f2;
-}
+  position: relative; }
 
 .contant {
   width: 1200px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
+/* 固定定位 */
+#fixed {
+  width: 30px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99; }
+
+/* 广告 */
 #top {
   width: 100%;
   height: 100px;
-  background: #bc030f;
-}
+  background: #bc030f; }
 #top .advertising {
   width: 1200px;
   height: 100px;
   background: url(https://img.ingping.com/images/gg_images/202005/202005291831080775481.jpg) no-repeat;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
+/* 头部 */
 #header {
   width: 100%;
   height: 35px;
   background-color: #fcfcfc;
-  border: 1px solid #edeef0;
-}
+  border: 1px solid #edeef0; }
 #header .contant {
-  height: 35px;
-}
+  height: 35px; }
 #header .contant .header_left {
   float: left;
-  line-height: 35px;
-}
+  line-height: 35px; }
 #header .contant .header_left span {
   font-size: 12px;
   margin-right: 13px;
-  position: relative;
-}
+  position: relative; }
 #header .contant .header_left span::after {
   content: " ";
   position: absolute;
@@ -44,14 +50,12 @@ body {
   right: -14px;
   width: 1px;
   height: 12px;
-  background: #e2dde2;
-}
+  background: #e2dde2; }
 #header .contant .header_left a {
   font-size: 12px;
   color: #ff6600;
   margin: 0 10px 0 10px;
-  position: relative;
-}
+  position: relative; }
 #header .contant .header_left a::after {
   content: " ";
   position: absolute;
@@ -59,13 +63,119 @@ body {
   right: -10px;
   width: 1px;
   height: 12px;
-  background: #e2dde2;
-}
+  background: #e2dde2; }
 
+/* 导航栏 */
 #logo {
   width: 100%;
   height: 160px;
+  background-color: #fff; }
+#logo .contant {
+  height: 160px; }
+#logo .contant .logo_top {
+  width: 1200px;
+  height: 120px;
+  background-color: gold; }
+#logo .contant .logo_bottom {
+  width: 1200px;
+  height: 40px;
+  background-color: greenyellow; }
+
+/* 轮播 */
+#lunbo {
+  width: 100%;
+  height: 450px;
   background-color: #fff;
-}
+  position: relative; }
+#lunbo .carousel {
+  width: 100%;
+  height: 450px;
+  background-color: red; }
+#lunbo .contant {
+  height: 450px;
+  background-color: lightcoral;
+  position: absolute;
+  top: 0;
+  left: 166.5px; }
+#lunbo .contant .menu {
+  width: 210px;
+  height: 450px;
+  background-color: lightgoldenrodyellow;
+  float: left; }
+#lunbo .contant .tab {
+  width: 220px;
+  height: 450px;
+  background-color: lightgreen;
+  float: right; }
+
+/* 录音 */
+#record {
+  width: 100%;
+  height: 165px;
+  overflow: hidden; }
+#record .contant {
+  height: 150px;
+  margin-top: 15px;
+  background-color: deeppink; }
+#record .contant ul {
+  width: 1200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between; }
+#record .contant ul li {
+  width: 232px;
+  height: 150px;
+  float: left; }
+#record .contant ul li a {
+  display: block;
+  width: 232px;
+  height: 150px; }
+
+/* 喜欢 */
+#like {
+  width: 100%;
+  height: 345px; }
+#like .contant {
+  height: 345px; }
+#like .contant h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 32px;
+  margin-bottom: 16px; }
+#like .contant .crown {
+  width: 1200px;
+  height: 298px;
+  background-color: lightcyan; }
+#like .contant .crown ul {
+  width: 1200px;
+  height: 298px;
+  display: flex;
+  justify-content: space-between; }
+#like .contant .crown ul li {
+  width: 232px;
+  height: 298px;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #ededed; }
+
+#sell {
+  width: 100%;
+  height: 472px; }
+#sell .contant {
+  height: 472px; }
+#sell .contant h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 34px;
+  margin-bottom: 14px; }
+#sell .contant .top {
+  width: 1200px;
+  height: 194px;
+  background-color: yellow;
+  margin-bottom: 10px; }
+#sell .contant .bottom {
+  width: 1200px;
+  height: 194px;
+  background-color: bisque; }
 
 /*# sourceMappingURL=index.css.map */

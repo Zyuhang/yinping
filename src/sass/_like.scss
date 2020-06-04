@@ -1,0 +1,32 @@
+/* 喜欢 */
+#like{
+    width: $w;
+    height: 345px;
+    .contant{
+        height: 345px;
+        h2{
+            font-size: 24px;
+            font-weight: 900;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        } 
+        .crown{
+            width: $width;
+            height: 298px;
+            background-color: lightcyan;
+            ul{
+                width: $width;
+                height: 298px;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    width: 232px;
+                    height: 298px;
+                    float: left;
+                    background-color: #fff;
+                    @include borderstyle(1px,solid,#ededed);              
+                }
+            }
+        }
+    }
+}

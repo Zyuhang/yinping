@@ -9,6 +9,7 @@ $font_size:14px;
 
 body{
     background: #f2f2f2;
+    position: relative;
 }
 
 .contant{
@@ -19,6 +20,10 @@ body{
 @import "top.scss";
 @import "header.scss";
 @import "logo.scss";
+@import "lunbo.scss";
+@import "record.scss";
+@import "like.scss";
+@import "sell.scss";
 
 
 
