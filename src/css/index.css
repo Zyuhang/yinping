@@ -33,7 +33,7 @@ body {
   width: 100%;
   height: 35px;
   background-color: #fcfcfc;
-  border: 1px solid #edeef0; }
+  border-bottom: 1px solid #edeef0; }
 #header .contant {
   height: 35px; }
 #header .contant .header_left {
@@ -64,6 +64,117 @@ body {
   width: 1px;
   height: 12px;
   background: #e2dde2; }
+#header .contant .header_right {
+  float: right;
+  line-height: 35px; }
+#header .contant .header_right ul li {
+  height: 35px;
+  float: left;
+  position: relative; }
+#header .contant .header_right a {
+  height: 35px;
+  display: inline-block;
+  padding: 0 30px 0 30px;
+  font-size: 12px;
+  color: #333333;
+  box-sizing: border-box;
+  position: relative;
+  border-left: 1px solid #fcfcfc;
+  border-right: 1px solid #fcfcfc; }
+#header .contant .header_right a i {
+  padding-right: 5px; }
+#header .contant .header_right a .icon-wode {
+  vertical-align: middle; }
+#header .contant .header_right a .icon-xiala {
+  padding-left: 5px;
+  font-size: 6px;
+  color: #999999; }
+#header .contant .header_right a span {
+  position: absolute;
+  top: 0px;
+  left: 115px; }
+#header .contant .header_right a:hover {
+  color: #ff6600;
+  border-left: 1px solid #edeef0;
+  border-right: 1px solid #edeef0; }
+#header .contant .header_right li:hover ol {
+  display: block; }
+#header .contant .header_right .ol1 {
+  position: absolute;
+  width: 150px;
+  top: 35px;
+  background-color: #fff;
+  display: none;
+  z-index: 33; }
+#header .contant .header_right .ol1 li {
+  line-height: 35px;
+  text-align: left;
+  border-bottom: 1px solid #edeef0; }
+#header .contant .header_right .ol1 li:hover {
+  background-color: #edeef0; }
+#header .contant .header_right .ol1 a {
+  width: 150px;
+  height: 35px;
+  display: inline-block; }
+#header .contant .header_right .ol2 {
+  width: 280px;
+  height: 240px;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  z-index: 66;
+  background-color: #fff;
+  padding: 0 10px 0 10px;
+  display: none; }
+#header .contant .header_right .ol2 li {
+  width: 280px;
+  height: 119px;
+  border-bottom: 1px solid #edeef0; }
+#header .contant .header_right .ol2 .img_left {
+  float: left;
+  height: 120px;
+  margin-left: 20px; }
+#header .contant .header_right .ol2 .img_right {
+  margin-top: 40px;
+  background-color: #ff6600;
+  display: inline-block;
+  padding: 0 20px 0 20px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer; }
+#header .contant .header_right .ol2 .img_bottom {
+  display: block;
+  font-size: 12px; }
+#header .contant .header_right .ol2 img {
+  width: 120px;
+  height: 119px; }
+#header .contant .header_right .ol2 .weixin {
+  width: 60px;
+  height: 60px;
+  margin-top: 30px;
+  margin-left: 20px;
+  float: left; }
+#header .contant .header_right .ol2 .weixin img {
+  width: 60px;
+  height: 60px; }
+#header .contant .header_right .ol2 .span1 {
+  margin-top: 25px;
+  margin-left: 100px;
+  display: block;
+  font-size: 12px;
+  color: #666666; }
+#header .contant .header_right .ol2 .span2 {
+  margin-top: -10px;
+  margin-left: 100px;
+  display: block;
+  font-size: 12px;
+  color: #666666; }
+#header .contant .header_right .ol2 .img01 {
+  float: right;
+  width: 100px;
+  height: 100px;
+  margin-top: -75px;
+  margin-right: 20px; }
 
 /* 导航栏 */
 #logo {
@@ -74,8 +185,31 @@ body {
   height: 160px; }
 #logo .contant .logo_top {
   width: 1200px;
-  height: 120px;
-  background-color: gold; }
+  height: 100px;
+  padding-top: 20px; }
+#logo .contant .logo_top .img02 {
+  float: left; }
+#logo .contant .logo_top .img03 {
+  float: left;
+  margin-left: 20px;
+  margin-right: 35px; }
+#logo .contant .logo_top .search {
+  margin-top: 20px; }
+#logo .contant .logo_top input {
+  width: 400px;
+  height: 32px;
+  border: 2px solid #ff6600;
+  border-right: none;
+  text-indent: 10px; }
+#logo .contant .logo_top button {
+  width: 90px;
+  height: 36px;
+  border: none;
+  background-color: #ff6600;
+  border-bottom: 2px solid #ff6600;
+  margin-left: -4px;
+  cursor: pointer;
+  color: #fff; }
 #logo .contant .logo_bottom {
   width: 1200px;
   height: 40px;
@@ -85,28 +219,176 @@ body {
 #lunbo {
   width: 100%;
   height: 450px;
-  background-color: #fff;
-  position: relative; }
-#lunbo .carousel {
-  width: 100%;
-  height: 450px;
-  background-color: red; }
+  background-color: #fff; }
 #lunbo .contant {
-  height: 450px;
-  background-color: lightcoral;
-  position: absolute;
-  top: 0;
-  left: 166.5px; }
-#lunbo .contant .menu {
+  height: 450px; }
+#lunbo .menu {
   width: 210px;
   height: 450px;
-  background-color: lightgoldenrodyellow;
   float: left; }
-#lunbo .contant .tab {
+#lunbo .menu ul {
+  width: 210px;
+  height: 450px;
+  position: relative; }
+#lunbo .menu ul li {
+  width: 210px;
+  height: 51.3px;
+  background-color: #412e30;
+  border-bottom: 1px solid #555555;
+  padding-left: 15px;
+  padding-top: 12px; }
+#lunbo .menu ul li :nth-child(5) {
+  border-bottom: none; }
+#lunbo .menu li:hover {
+  background-color: #fff; }
+#lunbo .menu li:hover .tow {
+  display: block; }
+#lunbo .menu li:hover a {
+  color: black; }
+#lunbo .menu .voice a {
+  color: #fff;
+  margin-right: 5px; }
+#lunbo .menu .voice a:hover {
+  color: red; }
+#lunbo .menu .kmusic {
+  margin-top: 10px; }
+#lunbo .menu .kmusic a {
+  color: #82997e;
+  font-size: 12px;
+  margin-right: 10px; }
+#lunbo .menu .kmusic a:hover {
+  color: red; }
+#lunbo .menu .tow {
+  width: 750px;
+  height: 430px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 210px;
+  z-index: 99;
+  display: none;
+  padding-left: 20px;
+  padding-top: 20px; }
+#lunbo .menu .tow h3 {
+  color: #ff6600;
+  cursor: pointer;
+  margin-bottom: 15px; }
+#lunbo .menu .tow .xian {
+  border-bottom: 1px solid #eeeeee; }
+#lunbo .menu .tow .ka {
+  margin-top: 15px; }
+#lunbo .menu .tow .three_ka {
+  margin-bottom: 13px; }
+#lunbo .menu .tow .tow_ka {
+  margin-bottom: 13px; }
+#lunbo .menu .tow .one_ka {
+  margin-bottom: 13px; }
+#lunbo .menu .tow a {
+  margin-right: 18px;
+  color: #666666; }
+#lunbo .menu .tow a:hover {
+  color: #ff6600; }
+#lunbo .menu .tow span {
+  margin-right: 18px;
+  color: #e4dddd; }
+#lunbo .carousel {
+  width: 770px;
+  height: 450px;
+  position: relative;
+  float: left; }
+#lunbo .carousel ul li {
+  width: 770px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0; }
+#lunbo .carousel ul li img {
+  width: 770px;
+  height: 450px;
+  display: block; }
+#lunbo .carousel ol {
+  position: absolute;
+  left: 250px;
+  bottom: 14px;
+  z-index: 9; }
+#lunbo .carousel ol li {
+  width: 40px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-right: 8px;
+  float: left;
+  cursor: pointer; }
+#lunbo .carousel ol .active {
+  background-color: #fff; }
+#lunbo .download {
   width: 220px;
   height: 450px;
-  background-color: lightgreen;
+  background-color: #fff;
   float: right; }
+#lunbo .download .tab {
+  width: 220px;
+  height: 38px;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8; }
+#lunbo .download .tab a {
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: black;
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  box-sizing: border-box; }
+#lunbo .download .tab .active {
+  color: #ff6600;
+  border-bottom: 3px solid #ff6600; }
+#lunbo .download .item {
+  display: none; }
+#lunbo .download ul {
+  width: 217px;
+  height: 170px;
+  padding-left: 3px;
+  padding-top: 20px; }
+#lunbo .download ul li {
+  margin-bottom: 10px; }
+#lunbo .download ul a {
+  width: 217px;
+  display: inline-block;
+  font-size: 12px;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+#lunbo .download ul a:hover {
+  color: #ff6600; }
+#lunbo .download .sound {
+  width: 220px;
+  height: 220px;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8; }
+#lunbo .download .sound ol {
+  width: 220px;
+  height: 220px; }
+#lunbo .download .sound ol li {
+  width: 72px;
+  height: 72px;
+  float: left;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8; }
+#lunbo .download .sound ol a {
+  width: 72px;
+  height: 57px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+  color: #333338; }
+#lunbo .download .sound ol a:hover {
+  color: #ff6600; }
+#lunbo .download .sound ol i {
+  font-size: 28px; }
+#lunbo .download .sound ol p {
+  font-size: 12px; }
 
 /* 录音 */
 #record {
@@ -158,6 +440,7 @@ body {
   background-color: #fff;
   border: 1px solid #ededed; }
 
+/* 热卖 */
 #sell {
   width: 100%;
   height: 472px; }

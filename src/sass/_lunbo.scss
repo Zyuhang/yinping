@@ -3,29 +3,225 @@
     width: $w;
     height: 450px;
     background-color: #fff;
-    position: relative;
-    .carousel{
-        width: $w;
-        height: 450px;
-        background-color: red;
-    }
     .contant{
         height: 450px;
-        background-color: lightcoral;
-        position: absolute;      
-        top: 0;
-        left: 166.5px;
-        .menu{
+    }
+    .menu{
+        width: 210px;
+        height: 450px;
+        float: left;  
+        ul{
             width: 210px;
             height: 450px;
-            background-color: lightgoldenrodyellow;
-            float: left;
+            position: relative;
+            li{
+                width: 210px;
+                height: 51.3px;
+                background-color: #412e30;
+                border-bottom: 1px solid #555555;
+                padding-left: 15px;
+                padding-top: 12px;  
+                :nth-child(5){
+                    border-bottom:none;
+                }
+            }
         }
-        .tab{
-            width: 220px;
-            height: 450px;
-            background-color: lightgreen;
-            float: right;
+        li:hover{
+            background-color: #fff;
+        }
+        li:hover .tow{
+            display: block;
+        }
+        li:hover a{
+            color: black;
+        }
+        .voice{
+            a{
+                color: #fff;
+                margin-right: 5px;
+            }
+            a:hover{
+                color: red;
+            }
+        }
+        .kmusic{
+            margin-top: 10px;
+            a{
+                color: #82997e;
+                font-size: 12px;
+                margin-right: 10px;
+            }
+            a:hover{
+                color: red;
+            }
+        }
+        .tow{
+            width: 750px;
+            height: 430px;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 210px;
+            z-index: 99;
+            display: none;
+            padding-left: 20px;
+            padding-top: 20px;
+            h3{
+                color: #ff6600;
+                cursor: pointer;
+                margin-bottom: 15px;
+            }
+            .xian{
+                border-bottom: 1px solid #eeeeee;
+            }
+            .ka{
+                margin-top: 15px;
+            }
+            .three_ka{
+                margin-bottom: 13px;
+            }
+            .tow_ka{
+                margin-bottom: 13px;
+            }
+            .one_ka{
+                margin-bottom: 13px; 
+            }
+            a{
+                margin-right: 18px;
+                color: #666666;
+            }
+            a:hover{
+                color: #ff6600;
+            }
+            span{
+                margin-right: 18px;
+                color: #e4dddd;
+            }
         }
     }
+
+    .carousel{
+        width: 770px;
+        height: 450px;
+        position: relative;
+        float: left;
+        ul li{
+            width: 770px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            img{
+                width: 770px;
+                height: 450px;
+                display: block;
+            }
+        }
+        ol{
+            position: absolute;
+            left: 250px;
+            bottom: 14px;
+            z-index: 9; 
+            li{
+                width: 40px;
+                height: 6px;
+                background-color: rgba(255,255,255,0.5);
+                margin-right: 8px;
+                float: left;
+                cursor: pointer;         
+            }
+            .active{
+                background-color: #fff;
+            }
+        }
+    }
+
+    .download{
+        width: 220px;
+        height: 450px;
+        background-color: #fff;
+        float: right;
+        .tab{
+            width: 220px;
+            height: 38px;
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+            a{
+                width: 30px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-size: 12px;
+                color: black;
+                display: inline-block;
+                margin: 0 10px 0 10px;
+                box-sizing: border-box;
+            }
+            .active{
+                color: #ff6600;
+                border-bottom: 3px solid #ff6600;
+            }
+        }
+        .item{
+            display: none;
+        }
+        ul{
+            width: 217px;
+            height: 170px;
+            padding-left: 3px;
+            padding-top: 20px;
+            li{
+                margin-bottom: 10px;
+               
+            }
+            a{
+                width: 217px;
+                display: inline-block;
+                font-size: 12px;
+                color: #333333;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            a:hover{
+                color: #ff6600;
+            }
+        }
+        .sound{
+            width: 220px;
+            height: 220px;
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+            ol{
+                width: 220px;
+                height: 220px; 
+                li{
+                    width: 72px;
+                    height: 72px;
+                    float: left;
+                    border-right: 1px solid #e8e8e8;
+                    border-bottom: 1px solid #e8e8e8;               
+                }
+                a{
+                    width: 72px;
+                    height: 57px;
+                    display: inline-block;  
+                    text-align: center; 
+                    padding-top: 15px;
+                    color: #333338;
+                }
+                a:hover{
+                    color: #ff6600;
+                }
+                i{
+                    font-size: 28px;  
+                } 
+                p{
+                    font-size: 12px;
+                } 
+            }
+                
+        }
+    }
+    
 }

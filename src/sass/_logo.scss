@@ -7,8 +7,36 @@
         height: 160px;
         .logo_top{
             width: $width;
-            height: 120px;
-            background-color: gold;
+            height: 100px;
+            padding-top: 20px;
+            .img02{
+                float: left;
+            }
+            .img03{
+                float: left;
+                margin-left: 20px;
+                margin-right: 35px;
+            }
+            .search{
+                margin-top: 20px;
+            }
+            input{
+                width: 400px;
+                height: 32px;
+                border: 2px solid #ff6600;
+                border-right: none;
+                text-indent: 10px;
+            }
+            button{
+                width: 90px;
+                height: 36px;
+                border: none;
+                background-color: #ff6600;
+                border-bottom: 2px solid #ff6600;
+                margin-left: -4px;
+                cursor: pointer;
+                color: #fff;
+            }
         }
         .logo_bottom{
             width: $width;

@@ -5,10 +5,7 @@ body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,s
 	padding:0;	
 }
 body{
-	font:.14rem "微软雅黑",Arial	
-}
-h1,h2,h3,h4,h5,h6,b,strong{
-	font-weight:normal;	
+	font:14px "微软雅黑",Arial	
 }
 i,em{
 	font-style:normal;	
@@ -22,10 +19,10 @@ li{
 input{
 	outline:none;	
 }
-img{
+/* img{
 	vertical-align:top;	
 	border: 0;
-}
+} */
 .clearfix{
 	*zoom:1;	
 }
