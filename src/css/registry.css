@@ -7,19 +7,19 @@ body {
     background-color: #f9f9f9;
 }
 
-#header {
+#header01 {
     width: 100%;
     height: 100px;
     margin-top: 20px;
 }
 
-#header .container {
+#header01 .container {
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
 }
 
-#header .container .login {
+#header01 .container .login {
     float: left;
     width: 200px;
 }
@@ -34,7 +34,7 @@ img {
     border: 0;
 }
 
-#header .container .items {
+#header01 .container .items {
     float: right;
     margin-top: 45px;
 }
@@ -43,7 +43,7 @@ ul {
     list-style-type: none;
 }
 
-#header .container .items li {
+#header01 .container .items li {
     float: left;
     width: 125px;
 }
@@ -61,7 +61,7 @@ h1 {
     text-align: center;
     color: #fff;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #registry {
@@ -116,30 +116,6 @@ button{
     color: #fff;
     border: none;
     border-radius: 5px;
-}
-
-#footer{
-    width: 100%;
-    height: 150px;
-    margin-top: 30px;
-    text-align: center;  
-}
-.nav{
-    margin-bottom: 10px;
-}
-.nav a{
-    display: inline-block;
-    color: #919191;
-    padding: 0 6px;
-    line-height: 1.2;
-}
-.nav em{
-    color: #ddd;
-    font-style: normal;
-}
-.copyright{
-    color: #999;
-    line-height: 26px;
 }
 
 

@@ -1,0 +1,112 @@
+#commodity{
+    width: 100%;
+    background: #fff;
+}
+.list{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.shou{
+    height: 40px;
+    line-height: 40px;
+    margin-top: 160px;
+}
+.shou a{
+    color: #999999;
+    font-size: 12px;
+}
+.shou a:hover{
+    color: #ff6600;
+}
+.shou span{
+    color: #999999;
+    font-size: 12px;
+}
+.shopping{
+    height: 50px;
+    line-height: 50px;
+    font-weight: 900;
+    text-indent: 10px;
+    background-color: #f5f5f5;
+}
+.shopping .first{
+    font-size: 18px;
+    color: #ff6600;
+}
+.shopping a{
+    margin-right: 30px;
+    color: #999999;
+}
+.shopping a:hover{
+    color: #ff6600;
+}
+.pai{
+    height: 50px;
+    line-height: 50px;
+    background-color: #f5f5f5;
+    /* margin-top: 10px; */
+}
+.pai button{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.pai .btn1{
+    background-color: #ff6600;
+    color: #fff;
+}
+.pai .btn2:hover{
+    color: #ff6600;
+    border: 1px solid #ff6600;
+}
+.pai .btn3:hover{
+    color: #ff6600;
+    border: 1px solid #ff6600;
+}
+#commodity .list .crown {
+    width: 1200px;
+    height: 298px; 
+    margin-top: 10px;
+}
+  #commodity .list .crown ul {
+    width: 1200px;
+    height: 298px;
+    display: flex;
+    justify-content: space-between; }
+  #commodity .list .crown ul li {
+    width: 232px;
+    height: 298px;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ededed; }
+  #commodity .list .crown ul li:hover a {
+    color: #ff6600; }
+  #commodity .list .crown .music {
+    width: 202px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  #commodity .list .crown .music a {
+    width: 202px;
+    display: block;
+    color: #333333; }
+  #commodity .list .crown .music img {
+    margin-left: 24px;
+    margin-top: 30px; }
+  #commodity .list .crown .music .p {
+    margin-top: 10px; }
+  #commodity .list .crown .music .p1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  #commodity .list .crown .music span {
+    margin-top: 20px;
+    display: inline-block;
+    color: #ff6600;
+    font-weight: 900;
+    font-size: 16px; }
