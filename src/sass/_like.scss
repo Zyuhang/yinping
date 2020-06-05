@@ -13,7 +13,6 @@
         .crown{
             width: $width;
             height: 298px;
-            background-color: lightcyan;
             ul{
                 width: $width;
                 height: 298px;
@@ -25,6 +24,38 @@
                     float: left;
                     background-color: #fff;
                     @include borderstyle(1px,solid,#ededed);              
+                }
+                li:hover a{
+                    color: #ff6600;
+                }
+            }
+            .music{
+                width: 202px;
+                padding-left: 15px;
+                padding-right: 15px;
+                a{
+                    width: 202px;
+                    display: block;
+                    color: #333333;
+                }
+                img{
+                    margin-left: 24px;
+                    margin-top: 30px;
+                }
+                .p{
+                    margin-top: 10px; 
+                }
+                .p1{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; 
+                }
+                span{
+                    margin-top: 20px;
+                    display: inline-block;
+                    color: #ff6600;
+                    font-weight: 900;
+                    font-size: 16px;
                 }
             }
         }

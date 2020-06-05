@@ -194,13 +194,16 @@ body {
   margin-left: 20px;
   margin-right: 35px; }
 #logo .contant .logo_top .search {
+  width: 600px;
+  float: left;
   margin-top: 20px; }
 #logo .contant .logo_top input {
   width: 400px;
   height: 32px;
   border: 2px solid #ff6600;
   border-right: none;
-  text-indent: 10px; }
+  text-indent: 10px;
+  color: #999999; }
 #logo .contant .logo_top button {
   width: 90px;
   height: 36px;
@@ -210,10 +213,93 @@ body {
   margin-left: -4px;
   cursor: pointer;
   color: #fff; }
+#logo .contant .logo_top ul {
+  width: 480px;
+  height: 30px;
+  margin-top: 8px; }
+#logo .contant .logo_top ul li {
+  float: left;
+  margin-right: 6px; }
+#logo .contant .logo_top ul a {
+  font-size: 12px;
+  color: #666666; }
+#logo .contant .logo_top ul a:hover {
+  color: #ff6600; }
+#logo .contant .logo_top .ping {
+  float: right;
+  width: 176px;
+  height: 40px;
+  margin-top: -70px; }
+#logo .contant .logo_top i {
+  float: left; }
+#logo .contant .logo_top .icon-shouji {
+  display: block;
+  font-size: 40px; }
+#logo .contant .logo_top .phone {
+  float: left;
+  width: 40px;
+  height: 38px;
+  padding-top: 2px;
+  font-weight: 900;
+  cursor: pointer; }
+#logo .contant .logo_top .phone1 {
+  color: #ff6600; }
+#logo .contant .logo_top .span {
+  width: 1px;
+  height: 36px;
+  margin-top: 4px;
+  display: block;
+  float: left;
+  background-color: #dddddd; }
+#logo .contant .logo_top .zheng {
+  float: left;
+  cursor: pointer; }
+#logo .contant .logo_top .zheng1 {
+  font-size: 32px;
+  font-weight: 900;
+  color: #ff6600;
+  margin-left: 10px; }
+#logo .contant .logo_top .bao {
+  width: 16px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 900;
+  display: inline-block; }
 #logo .contant .logo_bottom {
   width: 1200px;
+  height: 40px; }
+#logo .contant .logo_bottom .all {
+  width: 210px;
   height: 40px;
-  background-color: greenyellow; }
+  line-height: 40px;
+  background-color: #ff6600;
+  color: #fff;
+  text-indent: 13px;
+  cursor: pointer;
+  font-size: 16px;
+  float: left;
+  margin-right: 50px; }
+#logo .contant .logo_bottom ol {
+  width: 770px;
+  height: 40px;
+  float: left; }
+#logo .contant .logo_bottom ol li {
+  float: left;
+  line-height: 40px;
+  margin-right: 50px; }
+#logo .contant .logo_bottom ol a {
+  color: #333333;
+  font-weight: 900; }
+#logo .contant .logo_bottom ol a:hover {
+  color: #ff6600; }
+#logo .contant .logo_bottom .dian {
+  width: 150px;
+  height: 40px;
+  float: left;
+  margin-left: 5px; }
+#logo .contant .logo_bottom .dian img {
+  width: 150px;
+  height: 40px; }
 
 /* 轮播 */
 #lunbo {
@@ -397,8 +483,7 @@ body {
   overflow: hidden; }
 #record .contant {
   height: 150px;
-  margin-top: 15px;
-  background-color: deeppink; }
+  margin-top: 15px; }
 #record .contant ul {
   width: 1200px;
   height: 150px;
@@ -406,7 +491,7 @@ body {
   justify-content: space-between; }
 #record .contant ul li {
   width: 232px;
-  height: 150px;
+  height: 75px;
   float: left; }
 #record .contant ul li a {
   display: block;
@@ -426,8 +511,7 @@ body {
   margin-bottom: 16px; }
 #like .contant .crown {
   width: 1200px;
-  height: 298px;
-  background-color: lightcyan; }
+  height: 298px; }
 #like .contant .crown ul {
   width: 1200px;
   height: 298px;
@@ -439,6 +523,31 @@ body {
   float: left;
   background-color: #fff;
   border: 1px solid #ededed; }
+#like .contant .crown ul li:hover a {
+  color: #ff6600; }
+#like .contant .crown .music {
+  width: 202px;
+  padding-left: 15px;
+  padding-right: 15px; }
+#like .contant .crown .music a {
+  width: 202px;
+  display: block;
+  color: #333333; }
+#like .contant .crown .music img {
+  margin-left: 24px;
+  margin-top: 30px; }
+#like .contant .crown .music .p {
+  margin-top: 10px; }
+#like .contant .crown .music .p1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+#like .contant .crown .music span {
+  margin-top: 20px;
+  display: inline-block;
+  color: #ff6600;
+  font-weight: 900;
+  font-size: 16px; }
 
 /* 热卖 */
 #sell {
@@ -453,12 +562,174 @@ body {
   margin-bottom: 14px; }
 #sell .contant .top {
   width: 1200px;
-  height: 194px;
-  background-color: yellow;
+  height: 195px;
   margin-bottom: 10px; }
+#sell .contant .top1 {
+  width: 400px;
+  height: 195px;
+  margin-right: 10px;
+  float: left; }
+#sell .contant .top2 {
+  width: 555px;
+  height: 195px;
+  float: left;
+  background-color: #fff;
+  margin-right: 10px;
+  padding-left: 15px; }
+#sell .contant .top2_left {
+  width: 150px;
+  height: 175px;
+  float: left;
+  padding-top: 20px; }
+#sell .contant .top2_left .p1 {
+  font-size: 12px;
+  color: #999999; }
+#sell .contant .top2_left .p2 {
+  font-size: 18px; }
+#sell .contant .top2_left span {
+  margin-top: 10px;
+  display: inline-block;
+  color: #ff6600;
+  font-weight: 900;
+  font-size: 16px; }
+#sell .contant .top2_right {
+  width: 210px;
+  height: 195px;
+  float: right;
+  position: relative; }
+#sell .contant .top2_right .cu {
+  width: 28px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 0 0 60px 60px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff6600; }
+#sell .contant .top3 {
+  width: 195px;
+  height: 195px;
+  float: left;
+  background-color: #fff;
+  padding-left: 15px;
+  position: relative; }
+#sell .contant .top3 img {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  width: 130px; }
+#sell .contant .p3 {
+  font-size: 12px;
+  color: #999999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 20px; }
+#sell .contant .p4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+#sell .contant .span01 {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff6600;
+  font-weight: 900;
+  position: absolute;
+  z-index: 3;
+  margin-left: -2px;
+  font-size: 16px; }
+#sell .contant .cu1 {
+  width: 28px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 0 0 60px 60px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff6600; }
 #sell .contant .bottom {
   width: 1200px;
-  height: 194px;
-  background-color: bisque; }
+  height: 195px; }
+#sell .contant .bottom .bottom1 {
+  width: 400px;
+  height: 195px;
+  margin-right: 10px;
+  float: left; }
+#sell .contant .bottom .bottom2 {
+  width: 335px;
+  height: 195px;
+  float: left;
+  background-color: #fff;
+  margin-right: 10px;
+  padding-left: 15px; }
+#sell .contant .bottom .bottom2_left {
+  width: 160px;
+  height: 175px;
+  float: left;
+  padding-top: 20px; }
+#sell .contant .bottom .bottom2_left .p1 {
+  font-size: 12px;
+  color: #999999; }
+#sell .contant .bottom .bottom2_left .p2 {
+  font-size: 18px; }
+#sell .contant .bottom .bottom2_left span {
+  margin-top: 10px;
+  display: inline-block;
+  color: #ff6600;
+  font-weight: 900;
+  font-size: 16px; }
+#sell .contant .bottom .bottom2_right {
+  width: 170px;
+  height: 195px;
+  float: right;
+  position: relative; }
+#sell .contant .bottom .bottom2_right img {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  width: 160px; }
+#sell .contant .bottom .bottom2_right .cu {
+  width: 28px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 0 0 60px 60px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff6600; }
+#sell .contant .bottom .bottom3 {
+  width: 195px;
+  height: 195px;
+  float: left;
+  background-color: #fff;
+  margin-right: 10px;
+  padding-left: 15px;
+  position: relative; }
+#sell .contant .bottom .bottom3 img {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  width: 130px; }
+#sell .contant .bottom .bottom4 {
+  width: 195px;
+  height: 195px;
+  float: left;
+  background-color: #fff;
+  padding-left: 15px;
+  position: relative; }
+#sell .contant .bottom .bottom4 img {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  width: 130px; }
 
 /*# sourceMappingURL=index.css.map */

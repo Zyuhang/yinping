@@ -6,7 +6,6 @@
     .contant{
         height:150px;
         margin-top: 15px;
-        background-color: deeppink;
         ul{
             width: $width;
             height: 150px;
@@ -14,7 +13,7 @@
             justify-content: space-between;
             li{
                 width: 232px;
-                height: 150px;
+                height: 75px;
                 float: left;
                 a{
                     display: block;

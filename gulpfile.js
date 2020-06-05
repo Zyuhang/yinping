@@ -41,7 +41,7 @@ gulp.task('copyfile', () => {
 });
 
 gulp.task('copyfile1', () => {
-    return gulp.src('src/fonts/*.woff')
+    return gulp.src('src/fonts/*.css')
         .pipe(gulp.dest('dist/fonts'));
 });
 
@@ -53,11 +53,11 @@ gulp.task('uglifyhtml', () => {
 });
 
 //4.压缩css文件 - 引入插件包
-// gulp.task('uglifycss', () => {
-//     return gulp.src('src/css/*.css')
-//         .pipe(css()) //执行css插件包
-//         .pipe(gulp.dest('dist/css'));
-// });
+gulp.task('uglifycss', () => {
+    return gulp.src('src/css/*.css')
+        .pipe(css()) //执行css插件包
+        .pipe(gulp.dest('dist/css'));
+});
 
 //5.sass编译成css - 引入插件包
 gulp.task('compilesass', () => {
