@@ -63,4 +63,27 @@
         }
     }
     new Tab().init();
+
+    class Top{
+        constructor(){
+            this.top = $("#top01");
+        }
+        init(){
+            let _this = this;
+            $(window).on("scroll",function(){
+                let scrollTop = $(window).scrollTop();
+                if(scrollTop>=800){
+                    _this.top.stop(true).animate({
+                        top:0
+                    }) 
+                }else{
+                    _this.top.stop(true).animate({
+                        top:-100
+                    }) 
+                }
+            })
+        }
+    }
+
+    new Top().init();
 }(jQuery)

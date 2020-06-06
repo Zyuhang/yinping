@@ -10,6 +10,14 @@ $font_size:14px;
 body{
     background: #f2f2f2;
     position: relative;
+    height: 5000px;
+}
+
+#top01{
+    position: fixed;
+    top: -100px;
+    left: 0;
+    z-index: 99;
 }
 
 .contant{

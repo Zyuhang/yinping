@@ -1,22 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>详情页</title>
+    <title>我的详情页</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/detail.css">
 </head>
+
 <body>
     <div id="header"></div>
+    <div id="detail">
+        <div id="classify">
+            <a href="javascript:;" class="a01">首页</a>
+            <span class="span01">></span>
+            <a href="javascript:;" class="a01">音箱</a>
+            <span class="span01">></span>
+            <a href="javascript:;" class="a01">雅马哈</a>
+            <span class="span01">></span>
+            <a href="javascript:;" class="a01">雅马哈音箱</a>
+            <span class="span01">></span>
+            <a href="javascript:;" class="a01">雅马哈HS8音箱</a>
+            <div id="particulars">
+                <div class="particulars_left">
+                    <div class="small">
+                        <img src="https://img.ingping.com/images/product/L/20205/202005251730316175457.jpg" alt=""
+                            class="simg">
+                        <div class="shade"></div>
+                    </div>
+                    <div class="big">
+                        <img src="" alt="" class="bimg">
+                    </div>
+                    <div class="particulars_bottom">
+                        <a href="javascript:;" class="a1 iconfont icon-zuojiantou"></a>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <a href="javascript:;" class="a2 iconfont icon-youjiantou"></a>
+                    </div>
+                </div>
+                <div class="particulars_right">
+                    <div class="title">雅马哈(YAMAHA) 印尼进口 HS8 8寸有源监听音箱 黑色 （只）</div>
+                    <div class="year">【年庆秒杀价2368元】6.1-6.10 限时立减320元！！！ 此单品/套装不与满减活动同时参与</div>
+                    <div class="money">
+                        <div class="yin">音平价：</div>
+                        <div class="number">
+                            <i>￥</i>
+                            <span class="span">2368.00</span>
+                        </div>
+                    </div>
+                    <div class="color">
+                        <div class="color_left">规&emsp;格：</div>
+                        <div class="color_right">
+                            <ol>
+                                <li>黑色</li>
+                                <li>白色</li>
+                                <li>红色</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="jia">
+                        <div class="jia_left">
+                            <div class="jia01">-</div>
+                            <input type="text" value="1">
+                            <div class="jian">+</div>
+                        </div>
+                        <div class="jia_center">
+                            <button>加入购物车</button>
+                        </div>
+                        <div class="jia_right">
+                            <button>进入购物车</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./script/detail.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        })
+    </script>
 </body>
 
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-<script src="./script/detail.js"></script>
-<script>
-    $(function () {
-        $("#header").load("header.html");
-        // $("#footer").load("footer.html");
-    })
-</script>
+
+
 </html>
