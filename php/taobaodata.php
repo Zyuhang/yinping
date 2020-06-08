@@ -1,12 +1,9 @@
 <?php
-require "conn.php";
+include "conn.php";
 
-$result = $conn->query("select * from taobaogoods");
-
-$taobaoarr = array();
-
-for ($i = 0; $i < $result->num_rows; $i++) {
-    $taobaoarr[$i] = $result->fetch_assoc();
+$res = $conn->query("select * from taobaogoods");
+$arr = array();
+for ($i = 0; $i < $res->num_rows; $i++) {
+    $arr[$i] = $res->fetch_assoc();
 }
-
-echo json_encode($taobaoarr);
+echo json_encode($arr);

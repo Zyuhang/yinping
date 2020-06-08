@@ -1,23 +1,13 @@
 <?php
 include "conn.php";
 
-
-if(isset($_GET["username"])){
-    $username = $_GET["username"];
-    $res = $conn->query("select * from registry where username='$username'");
-    if($res->fetch_assoc()){
+if (isset($_POST['username']) && isset($_POST['password'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $result = $conn->query("select * from registry where username='$username' and password='$password'");
+    if ($result->fetch_assoc()) {
         echo true;
-    }else{
-        echo false;
-    }
-}
-
-if(isset($_GET["password"])){
-    $password = $_GET["password"];
-    $res = $conn->query("select * from registry where password='$password'");
-    if($res->fetch_assoc()){
-        echo true;
-    }else{
+    } else {
         echo false;
     }
 }

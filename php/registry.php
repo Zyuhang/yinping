@@ -1,9 +1,8 @@
 <?php
 include "conn.php";
 
-
-if(isset($_GET["username"])){
-    $username = $_GET["username"];
+if(isset($_POST["username"])){
+    $username = $_POST["username"];
     $res = $conn->query("select * from registry where username='$username'");
     if($res->fetch_assoc()){
         echo true;
@@ -12,10 +11,9 @@ if(isset($_GET["username"])){
     }
 }
 
-if (isset($_GET['username']) && isset($_GET['password'])){
-    $username = $_GET['username'];
-    $password = sha1($_GET['password']);
-    $email = $_GET['email'];
+if (isset($_POST['username']) && isset($_POST['password'])){
+    $username = $_POST['username'];
+    $password = sha1($_POST['password']);
+    $email = $_POST['email'];
     $conn->query("insert registry values(null,'$username','$password','$email',NOW())");
-    header('location:http://localhost/JS-2002/project/src/login.html');
 }

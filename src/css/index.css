@@ -2,7 +2,6 @@
 body {
   background: #f2f2f2;
   position: relative;
-  height: 5000px;
 }
 
 #top01 {
@@ -377,7 +376,7 @@ body {
 /* 轮播 */
 #lunbo {
   width: 100%;
-  height: 450px;
+  height: 612px;
   background-color: #fff;
 }
 #lunbo .contant {
@@ -621,6 +620,9 @@ body {
   width: 232px;
   height: 150px;
 }
+#record .contant ul li:hover img {
+  transform: scale(1.1);
+}
 
 /* 喜欢 */
 #like {
@@ -635,6 +637,14 @@ body {
   font-weight: 900;
   margin-top: 32px;
   margin-bottom: 16px;
+  position: relative;
+}
+#like .contant h2 a {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-size: 16px;
+  color: #333333;
 }
 #like .contant .crown {
   width: 1200px;
@@ -643,15 +653,21 @@ body {
 #like .contant .crown ul {
   width: 1200px;
   height: 298px;
-  display: flex;
-  justify-content: space-between;
 }
 #like .contant .crown ul li {
   width: 232px;
   height: 298px;
   float: left;
+  margin-right: 7px;
   background-color: #fff;
+  position: relative;
   border: 1px solid #ededed;
+}
+#like .contant .crown ul li:hover img {
+  transform: scale(1.1);
+}
+#like .contant .crown ul li:nth-child(5n) {
+  margin-right: 0;
 }
 #like .contant .crown ul li:hover a {
   color: #ff6600;
@@ -667,6 +683,8 @@ body {
   color: #333333;
 }
 #like .contant .crown .music img {
+  width: 160px;
+  height: 160px;
   margin-left: 24px;
   margin-top: 30px;
 }
@@ -679,11 +697,35 @@ body {
   text-overflow: ellipsis;
 }
 #like .contant .crown .music span {
-  margin-top: 20px;
-  display: inline-block;
+  display: block;
   color: #ff6600;
   font-weight: 900;
   font-size: 16px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+#like .contant .crown ol {
+  width: 1200px;
+  height: 298px;
+}
+#like .contant .crown ol li {
+  width: 232px;
+  height: 298px;
+  float: left;
+  margin-right: 7px;
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #ededed;
+}
+#like .contant .crown ol li:hover img {
+  transform: scale(1.1);
+}
+#like .contant .crown ol li:nth-child(5n) {
+  margin-right: 0;
+}
+#like .contant .crown ol li:hover a {
+  color: #ff6600;
 }
 
 /* 热卖 */
@@ -704,6 +746,21 @@ body {
   width: 1200px;
   height: 195px;
   margin-bottom: 10px;
+}
+#sell .contant .top2:hover img {
+  transform: translateX(-5px);
+}
+#sell .contant .top3:hover img {
+  transform: translateX(-5px);
+}
+#sell .contant .bottom2:hover img {
+  transform: translateX(-5px);
+}
+#sell .contant .bottom3:hover img {
+  transform: translateX(-5px);
+}
+#sell .contant .bottom4:hover img {
+  transform: translateX(-5px);
 }
 #sell .contant .top1 {
   width: 400px;
@@ -899,6 +956,120 @@ body {
   bottom: 0px;
   right: 10px;
   width: 130px;
+}
+
+/* render */
+#num_f {
+  width: 100%;
+}
+#num_f .contant {
+  height: 5250px;
+  position: relative;
+}
+#num_f .contant h2 {
+  height: 72px;
+  font-size: 24px;
+  line-height: 72px;
+}
+#num_f .contant h2 .span01 {
+  color: #ff6600;
+  font-style: oblique;
+}
+#num_f .contant h2 .span02 {
+  font-weight: 900;
+}
+#num_f .contant .h3 {
+  position: absolute;
+  top: 790px;
+  left: 0;
+}
+#num_f .contant .h4 {
+  position: absolute;
+  top: 1570px;
+  left: 0;
+}
+#num_f .contant .h5 {
+  position: absolute;
+  top: 2350px;
+  left: 0;
+}
+#num_f .contant .h6 {
+  position: absolute;
+  top: 3130px;
+  left: 0;
+}
+#num_f .contant .h7 {
+  position: absolute;
+  top: 3910px;
+  left: 0;
+}
+#num_f .contant .h8 {
+  position: absolute;
+  top: 4690px;
+  left: 0;
+}
+#num_f .contant .music_rander {
+  width: 1200px;
+}
+#num_f .contant .music_left {
+  width: 390px;
+  height: 200px;
+  margin-right: 15px;
+  margin-bottom: 60px;
+  float: left;
+  cursor: pointer;
+  background-color: #fff;
+}
+#num_f .contant a {
+  display: inline-block;
+  width: 390px;
+  height: 200px;
+  color: #333333;
+}
+#num_f .contant .music_left:hover a {
+  color: #ff6600;
+}
+#num_f .contant .music_left:hover img {
+  transform: scale(1.1);
+}
+#num_f .contant .music_left:hover .p1 {
+  color: #ff6600;
+}
+#num_f .contant .music_left:nth-child(3n) {
+  margin-right: 0;
+}
+#num_f .contant .top_left {
+  width: 160px;
+  height: 175px;
+  float: left;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+#num_f .contant .top_left .p1 {
+  font-size: 12px;
+  color: #999999;
+}
+#num_f .contant .top_left .p2 {
+  font-size: 14px;
+}
+#num_f .contant .top_left span {
+  margin-top: 10px;
+  display: inline-block;
+  color: #ff6600;
+  font-weight: 900;
+  font-size: 16px;
+}
+#num_f .contant .top_right {
+  width: 200px;
+  height: 195px;
+  float: right;
+  position: relative;
+}
+#num_f .contant .top_right img {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  width: 160px;
 }
 
 /*# sourceMappingURL=index.css.map */

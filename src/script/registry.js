@@ -8,8 +8,8 @@
 
     $username.on("blur", function () {
         $.ajax({
-            type: 'get',
-            url: 'http://localhost/JS-2002/project/php/registry.php',
+            type: 'post',
+            url: 'http://localhost/JS-2002/yinping_project/php/registry.php',
             data: {
                 username: $username.val()
             },
@@ -51,15 +51,15 @@
         }
         
         $.ajax({
-            type: "get",
-            url: "http://localhost/JS-2002/project/php/registry.php",
+            type: "post",
+            url: "http://localhost/JS-2002/yinping_project/php/registry.php",
             data: {
                 username: $username.val(),
                 password: $password.val(),
                 email: $email.val()
             },
         })
-        $(location).attr("href",'http://localhost/JS-2002/project/src/login.html');
+        $(location).attr("href",'http://localhost/JS-2002/yinping_project/src/login.html');
         return false;
     })
     $password.on("blur", function () {

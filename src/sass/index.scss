@@ -10,7 +10,6 @@ $font_size:14px;
 body{
     background: #f2f2f2;
     position: relative;
-    height: 5000px;
 }
 
 #top01{
@@ -32,6 +31,7 @@ body{
 @import "record.scss";
 @import "like.scss";
 @import "sell.scss";
+@import "rander.scss";
 
 
 
