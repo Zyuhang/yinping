@@ -40,7 +40,7 @@
                 cursor: pointer;
                 color: #fff;
             }
-            ul{
+            .item01{
                 width: 480px;
                 height: 30px;
                 margin-top: 8px;
@@ -129,6 +129,7 @@
                     float: left;
                     line-height: 40px;
                     margin-right: 50px;
+                    position: relative;
                 }
                 a{
                     color: #333333;
@@ -147,6 +148,52 @@
                     width: 150px;
                     height: 40px;
                 }
+            }
+            ol .li01:hover .item{
+                display: block;
+            }
+            ol .li02:hover .item1{
+                display: block;
+            }
+            .item{
+                width: 450px;
+                height: 40px;
+                position: absolute;
+                top: 40px;
+                left: -170px;
+                z-index: 299;
+                display: none;
+                background-color: #ff6600;
+                box-sizing: border-box;
+            }
+            .item1{
+                width: 450px;
+                height: 40px;
+                position: absolute;
+                top: 40px;
+                left: -170px;
+                z-index: 299;
+                display: none;
+                background-color: #ff6600;
+                box-sizing: border-box;
+            }
+            .item .li{
+                float: left;
+                width: 100px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                cursor: pointer;
+                color: #fff;
+            }
+            .item1 .li{
+                float: left;
+                width: 100px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                cursor: pointer;
+                color: #fff;
             }
         }
     }

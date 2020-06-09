@@ -36,8 +36,8 @@ gulp.task('hello', () => {
 
 //2.复制文件
 gulp.task('copyfile', () => {
-    return gulp.src('src/thirdplugins/*.js')
-        .pipe(gulp.dest('dist/thirdplugins'));
+    return gulp.src('src/jq/*.js')
+        .pipe(gulp.dest('dist/jq'));
 });
 
 gulp.task('copyfile1', () => {

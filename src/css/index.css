@@ -264,20 +264,20 @@ body {
   cursor: pointer;
   color: #fff;
 }
-#logo .contant .logo_top ul {
+#logo .contant .logo_top .item01 {
   width: 480px;
   height: 30px;
   margin-top: 8px;
 }
-#logo .contant .logo_top ul li {
+#logo .contant .logo_top .item01 li {
   float: left;
   margin-right: 6px;
 }
-#logo .contant .logo_top ul a {
+#logo .contant .logo_top .item01 a {
   font-size: 12px;
   color: #666666;
 }
-#logo .contant .logo_top ul a:hover {
+#logo .contant .logo_top .item01 a:hover {
   color: #ff6600;
 }
 #logo .contant .logo_top .ping {
@@ -354,6 +354,7 @@ body {
   float: left;
   line-height: 40px;
   margin-right: 50px;
+  position: relative;
 }
 #logo .contant .logo_bottom ol a {
   color: #333333;
@@ -371,6 +372,52 @@ body {
 #logo .contant .logo_bottom .dian img {
   width: 150px;
   height: 40px;
+}
+#logo .contant .logo_bottom ol .li01:hover .item {
+  display: block;
+}
+#logo .contant .logo_bottom ol .li02:hover .item1 {
+  display: block;
+}
+#logo .contant .logo_bottom .item {
+  width: 450px;
+  height: 40px;
+  position: absolute;
+  top: 40px;
+  left: -170px;
+  z-index: 299;
+  display: none;
+  background-color: #ff6600;
+  box-sizing: border-box;
+}
+#logo .contant .logo_bottom .item1 {
+  width: 450px;
+  height: 40px;
+  position: absolute;
+  top: 40px;
+  left: -170px;
+  z-index: 299;
+  display: none;
+  background-color: #ff6600;
+  box-sizing: border-box;
+}
+#logo .contant .logo_bottom .item .li {
+  float: left;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  color: #fff;
+}
+#logo .contant .logo_bottom .item1 .li {
+  float: left;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  color: #fff;
 }
 
 /* 轮播 */
