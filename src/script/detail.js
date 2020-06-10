@@ -131,6 +131,11 @@
         $input.val($num);
     })
     $input.on("input", function () {
+        let $reg = /^\d+$/g;
+        let $value =  $input.val();
+        if (!$reg.test($value)) {
+            $input.val(1);
+        }
         if ($input.val() <= 0) {
             $input.val(1);
         }
