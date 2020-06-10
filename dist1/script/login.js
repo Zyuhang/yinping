@@ -1,1 +1,0 @@
-"use strict";!function(t){var a=t("#username"),e=t("#password");t("[type=button]").on("click",function(){t.ajax({type:"post",url:"http://localhost/JS-2002/yinping_project/php/login.php",data:{username:a.val(),password:e.val()},success:function(t){t?(location.href="index.html",localStorage.setItem("username",a.val())):(e.val(""),alert("用户名或者密码错误"))}})})}(jQuery);
