@@ -17,7 +17,7 @@
   height: 50px;
 }
 
-.select input {
+.xinxi .select input {
   width: 16px;
   height: 16px;
 }
@@ -57,13 +57,13 @@
   float: left;
 }
 
-.repeat .first {
+.repeat .select {
   width: 80px;
   height: 160px;
   clear: both;
 }
 
-.first input {
+.repeat .select input {
   width: 16px;
   height: 16px;
   margin-top: 50px;
@@ -193,6 +193,11 @@
 }
 
 .jiesuan .span20 {
+  font-size: 18px;
+  font-weight: 900;
+  color: #ff6600;
+}
+.jiesuan .span30 {
   font-size: 18px;
   font-weight: 900;
   color: #ff6600;

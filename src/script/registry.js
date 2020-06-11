@@ -9,9 +9,9 @@
     let $repasswordflag = true;
     let $emailflag = true;
     let $ajaxflag = true;
-
+//1.用户名
     $username.on("focus", function () {
-        $username.next().children(0).html("设置后不可更改，中英文均可，最长14个英文或7个汉字!");
+        $username.next().children(0).html("最长14个英文或7个汉字!");
         $username.next().children(0).css({
             color: "#999",
             display: "block"
@@ -27,8 +27,8 @@
                     data: {
                         username: $username.val()
                     }
-                }).done(function (result) {
-                    if (!result) {
+                }).done(function (res) {
+                    if (!res) {
                         $username.next().children(0).html("√");
                         $username.next().children(0).css({
                             color: "green",
@@ -61,9 +61,9 @@
             $usernameflag = false;
         }
     })
-
+//2.密码
     $password.on("focus", function () {
-        $password.next().children(0).html("长度为8~14个字符,至少包含2种字符");
+        $password.next().children(0).html("长度为6~14个字符,至少包含2种字符");
         $password.next().children(0).css({
             color: "#999",
             display: "block"
@@ -90,31 +90,31 @@
     })
     $password.on('input', function () {
         let $pass = $(this).val();
-        if ($pass.length >= 8 && $pass.length <= 14) {
+        if ($pass.length >= 6 && $pass.length <= 14) {
             let regnum = /\d+/;
             let regupper = /[A-Z]+/;
             let reglower = /[a-z]+/;
             let regother = /[\W\_]+/;
 
-            let $count = 0; //计数
+            let $number = 0;
 
             if (regnum.test($pass)) {
-                $count++;
+                $number++;
             }
 
             if (regupper.test($pass)) {
-                $count++;
+                $number++;
             }
 
             if (reglower.test($pass)) {
-                $count++;
+                $number++;
             }
 
             if (regother.test($pass)) {
-                $count++;
+                $number++;
             }
 
-            switch ($count) {
+            switch ($number) {
                 case 1:
                     $password.next().children(0).html("弱");
                     $password.next().children(0).css({
@@ -152,7 +152,7 @@
             $passwordflag = false;
         }
     })
-
+//3.确认密码
     $repassword.on("blur", function () {
         if ($repassword.val().trim() !== '') {
             if ($repasswordflag) {
@@ -180,7 +180,7 @@
             $repasswordflag = false;
         }
     })
-
+//4.邮箱
     $email.on("blur", function () {
         if ($email.val().trim() !== '') {
             if ($emailflag) {
@@ -217,7 +217,7 @@
         }
     })
 
-
+//5.按钮点击
     $btn.on("click", function () {
         if ($username.val().trim() === '') {
             $username.next().children(0).html("用户名不得为空！");
